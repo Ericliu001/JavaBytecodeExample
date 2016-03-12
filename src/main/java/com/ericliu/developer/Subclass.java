@@ -27,12 +27,14 @@ public class Subclass extends Superclass {
 	
 	public void accessInnerStaticClassFields(){
 		EricLiu eric = new EricLiu();
+
+		// one common use of the is in the Builder Pattern where the Outer Class's fields
+		// are assigned values from the fields of the builder instance
 		long copyEricId = eric.ericId;
 	}
 	
 	
 	public static class EricLiu{
 		private long ericId = 123L;
-		
 	} 
 }
